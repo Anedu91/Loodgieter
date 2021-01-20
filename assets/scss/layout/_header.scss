@@ -1,0 +1,14 @@
+.header{
+  background: $white-color;
+  padding: 2.1875rem 0;
+  &__banner{
+    margin-top: 3.125rem;
+     text-align: center;
+  }
+  &__container{
+    max-width: 75.5vw;
+    margin: auto;
+    background: $principal-color;
+
+  }
+}

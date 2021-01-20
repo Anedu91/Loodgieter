@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Loodgieter</title>
+  <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.png" class="navbar-logo" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><img src="assets/img/bars-solid.svg" alt=""></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-links">
+        <ul class="navbar-nav">
+          <li class="nav-item navbar-item">
+            <a class="nav-link navbar-link" href="#">Home</a>
+          </li>
+          <li class="nav-item navbar-item">
+            <a class="nav-link navbar-link" href="#">Hoe het werkt</a>
+          </li>
+          <li class="nav-item navbar-item">
+            <a class="nav-link navbar-link" href="#">Onze reviews</a>
+          </li>
+          <li class="nav-item navbar-item">
+            <a class="nav-link navbar-link" href="#">Tarieven</a>
+          </li>
+          <li class="nav-item navbar-item">
+            <a class="nav-link navbar-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit">
+            <svg class="icon--menu">
+              <use xlink:href="assets/images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="header__banner">
+      <h1 class="heading-1">Snel een Loodgieter nodig? <span class="text-principal">Bel ons! <span class="text-tertiary"> <svg class="icon--rotate"><use xlink:href="assets/images/sprite.svg#icon-phone"></use></svg> </span> 085-8770419 </span></h1>
+      <p class="paragraph">Nu bereikbaar!</p>
+    </div>
+    <div class="header__container">
+      <div class="header__form">
+        <form action="" class="form">
+          <div class="form__group mb-3">
+            <label class="form__label" for="comment">Waar kunnen we u mee helpen?</label>
+            <textarea class="form__control form__textarea" id="comment" placeholder="Bijv. Cv, verwarming, lekkage, reparatie"></textarea>
+          </div>
+          <div class="form__bottom mb-3">
+            <div class="form__group--row">
+              <label for="postcode" class="form__label">Waar?</label>
+              <input type="text" id="postcode" class="form__control form__input" placeholder="Postcode">
+            </div>
+            <button class="form__btn">Verder</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <script src="assets/js/vendors/bootstrap.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

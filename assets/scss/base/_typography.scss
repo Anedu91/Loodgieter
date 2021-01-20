@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{  
+    font-family: $principal-font;
+    color: $black-color;
+}
+.heading-1{
+    font-size: 2rem;
+    line-height: 1.1;
+}
+.paragraph{
+    font-size: 1.5625rem;
+    font-weight: 700;
+}

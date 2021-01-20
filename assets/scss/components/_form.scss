@@ -1,0 +1,47 @@
+.form{
+  &__group{
+    display: flex;
+    flex-direction: column;
+    &--row{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__label{
+    font-size: 2.25rem;
+    color: $white-color;
+    font-weight: 600;
+    text-align: center;
+  }
+  &__control{
+    border: none;
+    box-shadow: 6px 6px 23px #3d417b;
+    &:focus{
+      outline: none;
+    }
+  }
+  &__input{
+    padding: .5rem 1.1rem;
+  }
+  &__textarea{
+    padding: 2.1rem 1.5rem;
+
+  }
+  &__bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  &__btn{
+    font-family: inherit;
+    font-size: 1.625rem;
+    font-weight: 800;
+    line-height: 2;
+    padding: .5rem 2rem;
+    color: $white-color;
+    background: $tertiary-color;
+    border: none;
+    margin-left: 1rem;
+    box-shadow: 6px 6px 23px #3d417b;
+  }
+}
