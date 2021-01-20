@@ -1,0 +1,29 @@
+.rating{
+  margin-top: 4.2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  @include respond-above(sm){
+    margin-top: 3.375rem;
+  }
+  &__figure{
+    z-index: 10;
+    display: flex;
+  }
+  &__img{
+    max-width: 50%;
+    margin: auto;
+    @include respond-above(sm){
+      max-width: 80%;
+    }
+  }
+  &__line{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1rem;
+    background: $principal-color;
+    top: 45%;
+  }
+  
+}

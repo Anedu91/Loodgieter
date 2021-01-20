@@ -1,0 +1,43 @@
+.list{
+  list-style: none;
+  padding: .5rem 1.5rem;
+  margin-bottom: 0;
+  @include respond-above(sm){
+    padding: 0;
+  }
+  &__item{
+    position: relative;
+    font-size: .8rem;
+    // display: flex;
+    // align-items: center;
+    @include respond-above(sm){
+      font-size: 1rem;
+    }
+    &:before{
+      content: '';
+      position: relative;
+      display: inline-block;
+      left: -.5rem;
+      top: 50%;
+      transform: translateY(30%);
+      width: 1.5rem;
+      height: 1rem;
+      background-image: url(../images/svg/check.svg);
+      background-repeat: no-repeat;
+      background-size: 95%;
+      background-position: 50%;
+      @include respond-above(sm){
+        left: -.8rem;
+        width: 2rem;
+        height: 1.5rem;
+        transform: translateY(50%);
+      }
+
+    }
+    &:not(:last-child){
+      color: inherit;
+      margin-bottom: .5rem;
+    }
+
+  }
+}

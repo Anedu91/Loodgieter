@@ -5,13 +5,34 @@
     &--row{
       display: flex;
       flex-direction: row;
+      & > *:not(:last-child){
+        margin-right: 1rem;
+      }
     }
   }
   &__label{
-    font-size: 2.25rem;
-    color: $white-color;
+    font-size: 1rem;
+    color: inherit;
     font-weight: 600;
     text-align: center;
+    @include respond-above(sm){
+      font-size: 1.5rem;
+    }
+    @include respond-above(md){
+      font-size: 1.8rem;
+    }
+    @include respond-above(xxl){
+      font-size: 2.25rem;
+    }
+    &--small{
+      font-size: .8rem;
+      @include respond-above(sm){
+        font-size: 1.5rem;
+      }
+      @include respond-above(md){
+        font-size: 1.875rem;
+      }
+    }
   }
   &__control{
     border: none;
@@ -21,11 +42,24 @@
     }
   }
   &__input{
-    padding: .5rem 1.1rem;
+    padding: .5rem;
+    max-width: 6rem;
+    font-size: .8rem;
+    @include respond-above(sm){
+      font-size: 1rem;
+      padding: .5rem 1.1rem;
+      max-width: 7.5rem;
+    }
   }
   &__textarea{
-    padding: 2.1rem 1.5rem;
+    padding: 1rem;
     resize: none;
+    font-size: .8rem;
+    @include respond-above(sm){
+      font-size: 1rem;
+      padding: 2.1rem 1.5rem;
+      height: 10rem;
+    }
 
   }
   &__bottom{
@@ -35,14 +69,21 @@
   }
   &__btn{
     font-family: inherit;
-    font-size: 1.625rem;
+    font-size: .8rem;
     font-weight: 800;
     line-height: 2;
     padding: .5rem 2rem;
-    color: $white-color;
+    color: inherit;
     background: $tertiary-color;
     border: none;
     margin-left: 1rem;
     box-shadow: 6px 6px 23px #3d417b;
+    transition: .5s all;
+    @include respond-above(sm){
+      font-size: 1.625rem;
+    }
+    &:hover{
+      background: $secondary-color;
+    }
   }
 }

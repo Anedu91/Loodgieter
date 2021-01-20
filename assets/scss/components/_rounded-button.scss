@@ -1,0 +1,46 @@
+.rounded-button{ 
+  position: absolute;
+  top: 0;
+  display: none;  
+  flex-direction: column;
+  @include respond-above(lg){
+    display: flex;
+    right: -14.875vw;
+  }
+  @include respond-above(xxl){
+    right: -12.375vw;
+  }
+  &__btn{
+    font-weight: 800;
+    color: $white-color;
+    background: $secondary-color;
+    padding: 0 .5rem;
+    letter-spacing: 1px;
+    box-shadow: 3px 2px 10px 0px rgba(0,0,0,0.23);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    @include respond-above(sm){
+      border-radius: 50px 0 0 50px;
+      flex: auto;
+    }
+    &:hover{
+      color: $white-color;
+      text-decoration: none;
+      background: $principal-color;
+    }
+    &:first-child{
+      margin-right: 0;
+    }
+    &--green{
+      background: $tertiary-color;
+    }
+  }
+  &__number{
+    color: $secondary-color;
+  }
+ 
+}
