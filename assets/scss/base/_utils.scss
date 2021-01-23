@@ -1,6 +1,36 @@
+/*COLORS*/
 .text-principal{
   color: $principal-color;
 }
+.text-secondary-custom{
+  color: $secondary-color;
+}
 .text-tertiary{
-  color: $tertiary-color;
+  color: $tertiary-color!important;
+}
+/*BACKGROUND*/
+.bg-principal{
+  background: $principal-color;
+}
+.bg-secondary-custom{
+  background: $secondary-color;
+}
+.bg-tertiary{
+  background: $tertiary-color;
+}
+.bg-principal-light{
+  background: #E6F3FA;
+}
+/*MARGINS*/
+
+.margin-top{
+  &--lg{
+    margin-top: 2rem;
+  }
+  &--xl{
+    margin-top: 3rem;
+    @include respond-above(md){
+      margin-top: 5rem;
+    }
+  }
 }

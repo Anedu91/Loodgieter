@@ -1,0 +1,24 @@
+.feature{
+&__grid{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &--around{
+    justify-content: space-around;
+  }
+}
+&__list{
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin-bottom: 0;
+  @include respond-above(sm){
+    width: auto;
+  }
+
+}
+&__item{
+  text-align: center;
+  font-size: 1.1rem;
+}
+}

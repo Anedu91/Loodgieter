@@ -1,0 +1,25 @@
+.partners{
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $principal-color;
+    border-right: 1px solid $principal-color;    
+    padding: .1rem;
+    @include respond-above(sm){
+      padding: 1rem;
+    }
+    &:nth-child(11){
+      border-right: none;
+    }
+    &:nth-child(22){
+      border-right: none;
+    }
+  }
+  &__image{
+    max-width: 100%;
+  }
+}

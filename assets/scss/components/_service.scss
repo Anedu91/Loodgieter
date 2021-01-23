@@ -1,0 +1,53 @@
+.service{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 1.375rem;
+  grid-row-gap: 3.25rem;  
+  padding: 0 1.375rem;
+  @include respond-above(sm){
+    grid-template-columns: repeat(3,1fr);
+    padding: 0;
+  }
+  @include respond-above(md){
+    grid-column-gap: 5rem;
+    padding: 0 1rem;
+  }
+  @include respond-above(lg){
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 7rem;
+    padding: 0;
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem .5rem 1rem;
+    box-shadow: 3px 3px 12px rgba($black-color,.2);
+    @include respond-above(sm){
+      padding: 1rem 1rem 1.8rem;
+    }
+  }
+  &__title{
+    text-align: center;
+    font-size: .8rem;
+    @include respond-above(sm){
+      font-size: 1.75rem;
+
+    }
+
+  }
+  &__figure{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__image{
+    display: block;
+    max-width: 70%;
+    @include respond-above(sm){
+      max-width: 100%;
+    }
+  }
+}

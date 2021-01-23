@@ -1,0 +1,13 @@
+.container{
+  &--custom{
+    padding: 0 2rem;
+    width: 100%;
+    margin: auto;
+    @include respond-above(md){
+      padding: 0 1rem;
+    }
+    @include respond-above(lg){
+      max-width: 88vw;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.footer{
+  background: $principal-color;
+  padding-top: 1rem;
+  &__title{
+    color: $secondary-color;
+    font-weight: 800;
+    
+    @include respond-above(sm){
+      text-align: center;
+    }
+  }
+  .nav{
+    &-item{
+      &--foot{
+        &:not(:last-child){
+          border-right: 1px solid $white-color;
+        }
+      }
+    }
+    &-link{
+      color: $white-color;
+      padding: 0;
+      font-size: .7rem;      
+      font-weight: 400;
+      @include respond-above(sm){
+        font-size: 1.1rem;
+        text-align: center;
+      }
+      &--foot{
+        padding: 0 .5rem;
+        font-size: .8rem;
+      }
+      &:hover{
+        color: $secondary-color;
+      }
+      
+    }
+    
+  }
+  &__foot{
+    margin-top: 1rem;
+    border-top: 1px solid $principal-light-color;
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  &__link{
+    color: $white-color;
+    font-size: .6rem;
+    @include respond-above(sm){
+      font-size: 1rem;
+    }
+    &:hover{
+      color: $secondary-color;
+      text-decoration: none;
+    }
+  }
+  &__text{
+    margin-bottom: 0;
+    color: $white-color;
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+  }
+  &__lastnav{
+    flex: 0 0 100%;
+    justify-content: center;
+  }
+  @include  respond-above(sm){
+    .nav{
+      &--left{
+        border-right: 1px solid $principal-light-color;
+      }
+      &-link{
+        text-align: left;
+        &--foot{
+          font-size: .9rem;
+        }
+      }
+    }
+    &__lastnav{
+      justify-content: center;
+    }
+    &__title{
+      text-align: left;
+    }
+  }
+  @include respond-above(md){
+    
+    &__text{
+      flex: auto;
+      margin-bottom: 0;
+      text-align: left;
+      font-size: 1rem;
+    }
+    &__lastnav{
+      flex: auto;
+      justify-content: flex-end;
+    }
+  }
+}

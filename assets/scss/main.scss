@@ -7,15 +7,25 @@
 @import "base/typography";
 
 /*COMPONENTS*/
+@import "components/article";
+@import "components/banner";
+@import "components/container";
+@import "components/feature";
 @import "components/form";
 @import "components/icon";
 @import "components/list"; 
 @import "components/navbar";
+@import "components/navigation";
+@import "components/partners";
 @import "components/rating";
+@import "components/review";
 @import "components/rounded-button";
+@import "components/service";
+@import "components/step";
 
 /*LAYOUT*/
 @import "layout/header";
+@import "layout/footer";
 
 @import "base/utils";
 
