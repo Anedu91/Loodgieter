@@ -1,6 +1,7 @@
 .footer{
   background: $principal-color;
   padding-top: 1rem;
+  padding-bottom: 2rem;
   &__title{
     color: $secondary-color;
     font-weight: 800;
@@ -70,6 +71,7 @@
     justify-content: center;
   }
   @include  respond-above(sm){
+    padding-bottom: 0;
     .nav{
       &--left{
         border-right: 1px solid $principal-light-color;

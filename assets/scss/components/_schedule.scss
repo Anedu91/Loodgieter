@@ -1,0 +1,25 @@
+.schedule{
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr fit-content(300px) 1fr;
+  grid-row-gap: 2rem;
+  &--big{
+    grid-template-columns: 1fr;
+    @include respond-above(sm){
+      grid-template-columns: repeat(2,1fr);
+    }
+    @include respond-above(xxl){
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+  &__item{
+    text-align: center;
+    font-weight: 600;
+    font-size: .7rem;
+    @include respond-above(sm){
+      font-size: 1rem;
+    }
+
+  }
+}

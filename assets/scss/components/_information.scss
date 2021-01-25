@@ -1,0 +1,21 @@
+.information{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2rem 1rem;  
+  @include respond-above(sm){
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem 2.5rem;
+  }
+  @include respond-above(xxl){
+    grid-template-columns: repeat(3,1fr);
+  }
+  &__text{
+    font-weight: 600;
+    text-align: center;
+    font-size: .8rem;
+    @include respond-above(sm){
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.fixed-button{
+  position: fixed;
+  display: flex;
+  top: 100vh;
+  transform: translateY(-100%);
+  width: 100%;
+  z-index: 100;
+  @include respond-above(sm){
+    display: none;
+  }
+  &__btn{
+    flex: 0 0 50%;
+    padding: .6rem 0;
+    text-align: center;
+    font-weight: 800;
+    color: $white-color;
+  }
+}

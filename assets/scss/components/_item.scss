@@ -1,0 +1,136 @@
+.item{
+  position: relative;
+  padding: .5rem 1.2rem 2.5rem;
+  background: $principal-lighter;
+  &::before{
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    box-shadow: 8px 8px 10px rgba($black-color,.16);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include respond-above(md){
+      top: -2.5rem;
+      left: -2.5rem;
+      width: 5rem;
+      height: 5rem;
+    }
+    
+  }
+  &--nobg{
+    &::before{
+      background-color: transparent;
+      border-radius: 0;
+      background-image: url(../images/icons/check-icon.png);
+      box-shadow: none;
+      top: -2rem;
+      left: 0rem;
+      width: 3rem;
+      height: 3rem;
+      @include respond-above(sm){
+        top: -2.5rem;
+        left: -2.5rem;
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+  &--noIcon{
+    padding: .5rem 1.2rem .5rem;
+    background: $principal-lighter;
+  }
+  &--exclamation{
+    &:before{
+      background-image: url(../images/icons/exclamation-icon.png);
+    }
+  }
+  &--car{
+    &:before{
+      background-image: url(../images/icons/car-icon.png);
+      background-size: 70%;
+    }
+  }
+  &--penny{
+    &:before{
+      background-image: url(../images/icons/penny-icon.png);      
+    }
+  }
+  &--money{
+    &:before{
+      background-image: url(../images/icons/money-icon.png);
+      background-size: 80%;      
+    }
+  }
+  &--phone{
+    &:before{
+      background-image: url(../images/icons/phone-icon.png);
+      background-size: 40%;      
+    }
+  }
+  &--message{
+    &:before{
+      background-image: url(../images/icons/message-icon.png);
+      background-size: 70%;      
+    }
+  }
+  &--margin{
+    margin-top: 2rem;
+    @include respond-above(md){
+      margin-top: 3.5rem;
+    }
+  }
+  &__grid{
+
+    justify-content: space-between;
+    flex-direction: column;
+    @include respond-above(md){
+      flex-direction: row;
+      & > * {
+        flex: 0 0 48%;
+      }
+    }
+  }
+  &__title{
+    font-weight: 800;
+    font-size: 1.1rem;
+    @include respond-above(sm){
+      font-size: 1.3rem;
+    }
+    @include respond-above(xl){
+      font-size: 1.5rem;
+    }
+  }
+  &__sub-title{
+    font-size: .8rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.875rem;
+    @include respond-above(sm){
+      font-size: 1.2rem;
+    }
+
+  }
+  &__text{
+    font-size: .6rem;
+    font-weight: 600;
+    @include respond-above(sm){
+      font-size: 1rem;
+    }
+  } 
+  &__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $tertiary-color;
+    display: none;
+    @include respond-above(sm){
+      display: inline-block;
+    }
+  }
+}
